@@ -1,0 +1,38 @@
+.rs-slider {
+    height: 592px;
+    background-image: url(../../img/fonslider.jpg);
+    display: flex;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    // .rs-slider__text
+
+    &__text {
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    // .rs-slider__title
+
+    &__title {
+        font-size: 72px;
+        color: #354764;
+        font-weight: 500;
+        padding-bottom: 48px;
+    }
+
+    // .rs-slider__subtitle
+
+    &__subtitle {
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    // .rs-slider__image
+
+}
+

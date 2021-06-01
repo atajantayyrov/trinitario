@@ -21,10 +21,20 @@
 }
 
 header {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   z-index: 99;
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -135,6 +145,44 @@ header {
   border-bottom: 1px solid #586b89;
 }
 
+.rs-slider {
+  height: 592px;
+  background-image: url(../../img/fonslider.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.rs-slider__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rs-slider__title {
+  font-size: 72px;
+  color: #354764;
+  font-weight: 500;
+  padding-bottom: 48px;
+}
+
+.rs-slider__subtitle {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 @media (max-width: 1600px) {
   .container {
     width: 1500px;
@@ -158,3 +206,5 @@ header {
     width: 100%;
   }
 }
+
+.webp .rs-slider { background-image: url(../../img/fonslider.webp); }
