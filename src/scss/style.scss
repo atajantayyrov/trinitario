@@ -1,23 +1,21 @@
+.container {
+    width: 1280px;
+    padding: 0 15px;
+    margin: auto;
+    @media (max-width: 1600px) {
+        width: 1500px;
+      }
+      @media (max-width: 1500px) {
+        width: 1400px;
+      }
+      @media (max-width: 1400px) {
+        width: 1300px;
+      }
+      @media (max-width: 1300px) {
+        width: 100%;
+      }
+}
+
 @import "mixins";
 @import "fonts";
-body{
-    background-color: lightcoral;
-    text-align: center;
-    display: flex;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
-}
-
-span {
-    font-size: 20px;
-    @media (max-width: 767px) {
-        font-size: 15px;
-    }
-}
-
-div {
-    font-size: 30px;
-    background: url("../img/cave.jpg") 0 0 no-repeat;
-    @media (max-width: 767px) {
-        font-size: 20px;
-    }
-}
+@import "_parts/header";
