@@ -1,0 +1,117 @@
+.rs-top-header {
+    background-color: #586b89;
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__col {
+        // max-width: 25%;
+        // flex: 0 0 25%;
+    }
+    &__info {
+        line-height: 1;
+        padding: 8px 0;
+    }
+    &__info-text {
+        font-size: 13px;
+        color: #ffffff;
+    }
+    &__info-link {
+        font-size: 13px;
+        color: #ffffff;
+    }
+}
+%iconSize {
+    img {
+        height: 17px;
+        width: auto;
+    }
+}
+.rs-menu-cart {
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__col-1 {
+        max-width: 33.3333%;
+        flex: 0 0 33.3333%;
+        display: flex;
+        // align-items: center;
+    }
+    &__col-2 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    &__search {
+        padding-top: 42px;
+    }
+    &__search-input {
+        width: 160px;
+        border-bottom: 1px solid #e4e4e4;
+        color: #7e7e7e;
+        font-size: 13px;
+        &::placeholder {
+            font-size: 13px;
+            color: #7e7e7e;
+            letter-spacing: 2px;
+        }
+    }
+    &__search-button {
+        @extend %iconSize;
+        padding: 0 4px;
+    }
+    &__logo {
+        display: inline-block;
+        padding: 42px 20px 22px;
+        margin: auto;
+        img {
+            height: 29px;
+            width: auto;
+        }
+    }
+    &__icons {
+        display: flex;
+        margin-left: auto;
+        padding-top: 42px;
+    }
+    &__user {
+    }
+    &__user-icon {
+        @extend %iconSize;
+    }
+    &__wishlist {
+    }
+    &__wishlist-icon {
+        @extend %iconSize;
+        margin-left: 22px;
+    }
+    &__wishlist-count {
+    }
+    &__basket {
+    }
+    &__basket-icon {
+        @extend %iconSize;
+        margin-left: 22px;
+    }
+    &__basket-count {
+    }
+    &__menu {
+    }
+}
+.rs-main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -20px;
+    &__item {
+    }
+    &__link {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 20px;
+        color: #333333;
+    }
+}

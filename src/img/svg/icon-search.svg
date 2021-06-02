@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 17 17">
+  <style>
+    .src0{fill:none;stroke:#333333;stroke-linecap:round;stroke-miterlimit:10;stroke-width:.65}
+  </style>
+  <circle transform="rotate(-45 7.6141 7.6243)" class="src0" cx="7.6" cy="7.6" r="6.8"/>
+  <path class="src0" d="M12.5 12.5l3.7 3.7"/>
+</svg>
