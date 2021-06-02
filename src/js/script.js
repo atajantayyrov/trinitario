@@ -12,7 +12,21 @@ function testWebP(callback) {
 testWebP(function (support) {
     if (support == true) {
         document.querySelector('body').classList.add('webp');
-    }else{
+    } else {
         document.querySelector('body').classList.add('no-webp');
     }
+});
+
+let rsMenuBars = document.getElementById('rsMenuBars');
+let rsMenu = document.getElementById('rsMenu');
+let rsMenuSearch = document.getElementById('rsMenuSearch');
+let rsMenuSearchToggler = document.getElementById('rsMenuSearchToggler');
+rsMenuBars.addEventListener('click', function () {
+    rsMenu.classList.add('active');
+});
+rsMenuClose.addEventListener('click', function () {
+    rsMenu.classList.remove('active');
+});
+rsMenuSearchToggler.addEventListener('click', function () {
+    rsMenuSearch.classList.toggle('active');
 });
