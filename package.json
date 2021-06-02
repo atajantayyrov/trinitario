@@ -1,7 +1,7 @@
 {
-  "name": "Sany",
+  "name": "Trinitario",
   "version": "1.0.0",
-  "description": "Sany Company",
+  "description": "Trinitario - Rossait",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
