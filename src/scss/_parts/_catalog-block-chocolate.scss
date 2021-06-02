@@ -1,0 +1,49 @@
+.rs-catalog-block-chocolate {
+    background-image: url(../../img/block_chocolatefon.jpg);
+position: relative;
+background-position: center;
+background-repeat: no-repeat;
+overflow: hidden;
+padding-top: 85px;
+
+    // .rs-catalog-block-chocolate__title
+
+    &__title {
+        padding-bottom: 60px;
+        font-size: 46px;
+        color: #354764;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // .rs-catalog-block-chocolate__item
+
+    &__item {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+    // .rs-catalog-block-chocolate__item-image
+
+    &__item-image {
+        padding-bottom: 40px;
+    }
+
+    // .rs-catalog-block-chocolate__item-name
+
+    &__item-name {
+        font-size: 24px;
+    }
+}
+.container {
+}
+.row {
+}
+.col-sm-4 {
+}
+.p-top {
+    padding-top: 100px;
+}

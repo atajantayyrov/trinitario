@@ -1,6 +1,29 @@
+.container {
+  width: 1280px;
+  padding: 0 15px;
+  margin: auto;
+  @media (max-width: 1600px) {
+    width: 1500px;
+  }
+  @media (max-width: 1500px) {
+    width: 1400px;
+  }
+  @media (max-width: 1400px) {
+    width: 1300px;
+  }
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
+}
+
 @import "mixins";
 @import "_parts/normalize";
 @import "_parts/common";
 @import "_parts/header";
 @import "_parts/slider";
-@import "_parts/news";
+@import "_parts/products";
+@import "_parts/catalog-block-chocolate";
+@import "_parts/text-block";
+
+
+
