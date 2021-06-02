@@ -1,0 +1,128 @@
+.rs-subscribe {
+    // .rs-subscribe__wrapper
+    height: 575px;
+    padding-bottom: 75px;
+
+    &__content{
+        position: relative;
+       
+
+    }
+
+    &__wrapper {
+        background-color: #fff;
+        width: 702px;
+        height: 442px;
+        background-image: url(../../img/ramkaform.png);
+        display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    }
+
+    &__image{
+        position: absolute;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    z-index: -11;
+
+    }
+    // .rs-subscribe__title
+
+    &__title {
+        font-size: 28px;
+        font-family: 'EB Garamond', serif;
+        color: #354764;
+        padding-bottom: 15px;
+    }
+
+    // .rs-subscribe__subtitle
+
+    &__subtitle {
+        line-height: 2;
+        font-size: 13px;
+        color: #424242;
+        font-family: 'Montserrat', sans-serif;
+        padding-bottom: 30px;
+        
+    }
+		// .rs-subscribe__subtitle-link
+
+		&__subtitle-link {
+            text-decoration: #424242;
+            text-decoration-line:underline;
+		}
+
+    // .rs-subscribe__form
+
+    &__form {
+        width: 582px;
+        height: 54px;
+        border: 1px solid #586b89;
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        
+    }
+
+    // .rs-subscribe__form-mail
+
+    &__form-mail {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-family: 'EB Garamond', serif;
+        width: 338px;
+        height: 25px;
+        outline: none;
+        border-right: 1px solid #586b89;
+        padding-left: 34px;
+        
+        
+    }
+
+    // .rs-subscribe__form-button
+
+    &__form-button {
+        background:none;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-family: 'EB Garamond', serif;
+        font-weight: 600;
+        letter-spacing: .05em;
+         box-shadow: 0 0 0 1px #fff inset;
+        transition: all .3s ease-out 70ms;
+        outline: none;
+        height: 50px;
+        width: 239px;
+        margin: auto;
+        &:hover{
+            background: #ce7a51;
+            color: #fff;
+
+        }
+    }
+
+    // .rs-subscribe__icons
+
+    &__icons {
+    }
+
+    // .rs-subscribe__icons-text
+
+    &__icons-text {
+        font-size: 28px;
+        color: #354764;
+        font-family: 'EB Garamond', serif;
+        font-weight: 500;
+        padding-bottom: 17px;
+    }
+
+    // .rs-subscribe__icons-icon
+
+    &__icons-icon {
+    }
+}
+.container {
+}
