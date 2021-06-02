@@ -1,0 +1,32 @@
+.rs-slider {
+    height: 592px;
+    background-image: url(../../img/sliderfon.jpg);
+    display: flex;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    // .rs-slider__text
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .rs-slider__title
+
+    &__title {
+        padding-bottom: 46px;
+        font-size: 72px;
+        color: #354764;
+    }
+
+    // .rs-slider__subtitle
+
+    &__subtitle {
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+.container {
+}
