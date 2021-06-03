@@ -21,7 +21,7 @@ const rsGallerySwiper = new Swiper('#rsGallery', {
     }
 })
 let rsGallery = document.getElementById('rsGallery');
-if (rsGallery.length > 0) {
+if (rsGallery) {
     rsGallery.addEventListener('mouseenter', function () {
         rsGallerySwiper.autoplay.stop();
     });
