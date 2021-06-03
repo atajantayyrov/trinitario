@@ -1,0 +1,24 @@
+.rs-slider-block-chocolate {
+    margin-top: 90px;
+    height: 445px;
+
+    // .rs-slider-block-chocolate__wrapper
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item{
+        &:nth-child(even){
+            margin-top: 40px;
+        }
+    }
+
+    // .rs-slider-block-chocolate__img
+
+    &__img {
+        padding: 0 50px; 
+    }
+}
