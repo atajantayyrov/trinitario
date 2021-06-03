@@ -1,6 +1,6 @@
-// include('_parts/header.js');
-// include('_parts/slider.js');
-// include('_parts/gallery.js');
+@@include('_parts/header.js');
+@@include('_parts/slider.js');
+@@include('_parts/gallery.js');
 @@include('_parts/news.js');
 
 function testWebP(callback) {
@@ -23,17 +23,17 @@ let rsMenuClose = document.getElementById('rsMenuClose');
 let rsMenu = document.getElementById('rsMenu');
 let rsMenuSearch = document.getElementById('rsMenuSearch');
 let rsMenuSearchToggler = document.getElementById('rsMenuSearchToggler');
-if(rsMenuBars) {
+if (rsMenuBars) {
     rsMenuBars.addEventListener('click', function () {
         rsMenu.classList.add('active');
     });
 }
-if(rsMenuClose) {
+if (rsMenuClose) {
     rsMenuClose.addEventListener('click', function () {
         rsMenu.classList.remove('active');
     });
 }
-if(rsMenuSearchToggler) {
+if (rsMenuSearchToggler) {
     rsMenuSearchToggler.addEventListener('click', function () {
         rsMenuSearch.classList.toggle('active');
     });

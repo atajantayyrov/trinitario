@@ -1,4 +1,4 @@
-const rsGallery = new Swiper('#rsGallery', {
+const rsGallerySwiper = new Swiper('#rsGallery', {
     slidesPerView: 'auto',
     spaceBetween: 15,
     loop: true,
@@ -21,11 +21,11 @@ const rsGallery = new Swiper('#rsGallery', {
     }
 })
 let rsGallery = document.getElementById('rsGallery');
-if(rsGallery.length > 0){
-    rsGallery.addEventListener('mouseenter',function (){
-        rsGallery.autoplay.stop();
+if (rsGallery.length > 0) {
+    rsGallery.addEventListener('mouseenter', function () {
+        rsGallerySwiper.autoplay.stop();
     });
-    rsGallery.addEventListener('mouseleave',function (){
-        rsGallery.autoplay.start();
+    rsGallery.addEventListener('mouseleave', function () {
+        rsGallerySwiper.autoplay.start();
     });
 }
