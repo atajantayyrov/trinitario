@@ -1,3 +1,9 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: #ffffff;
+}
 .rs-top-header {
     background-color: #586b89;
     @media (max-width: 991px) {

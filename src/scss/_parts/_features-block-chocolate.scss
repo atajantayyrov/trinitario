@@ -1,56 +1,101 @@
-.rs-features-block-chocolate {
-    margin-top: 73px;
-    height: 130px;
-    background-color: #eef0f3;
+.rs-features-bc {
     position: relative;
-
-    &__wrapper{
-        
-    }
-    // .rs-features-block-chocolate__item
-
-    &__item {
-        display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    }
-
-    // .rs-features-block-chocolate__icon
-
-    &__icon {
+    padding-bottom: 36px;
+    &:before {
+        content: '';
         position: absolute;
-        top: -20px;
+        top: 20px;
         right: 0;
-        margin: auto;
+        bottom: 0;
         left: 0;
-        @media (max-width: 757px) {
-            top: -70px;
-          }
+        height: calc(100% - 20px);
+        width: 100%;
+        background-color: #eef0f3;
+        z-index: -1;
     }
-
-    // .rs-features-block-chocolate__title
-
+    &:after {}
+    &__swiper {}
+    &__wrapper {}
+    &__slide {
+        text-align: center;
+        padding: 0 80px;
+        @media (max-width: 991px) {
+            padding: 0 40px;
+        }
+    }
+    &__icon {
+        height: 46px;
+        width: auto;
+        margin-bottom: 16px;
+    }
     &__title {
-        padding-bottom: 4px;
+        font-family: 'Montserrat';
         font-size: 13px;
         font-weight: 600;
         color: #4e6b8b;
-        font-family: 'EB Garamond', serif;
+        letter-spacing: 2px;
         text-transform: uppercase;
-        margin-top: 50px;
+        margin-bottom: 6px;
     }
-
-    // .rs-features-block-chocolate__subtitle
-
     &__subtitle {
         font-size: 13px;
         color: #424242;
-        font-family: 'Montserrat', sans-serif;
-        padding: 0 52px;
-        font-weight: 500;
-        
+        line-height: 1.5;
     }
 }
-
+//.rs-features-block-chocolate {
+//    margin-top: 73px;
+//    height: 130px;
+//    background-color: #eef0f3;
+//    position: relative;
+//
+//    &__wrapper{
+//
+//    }
+//    // .rs-features-block-chocolate__item
+//
+//    &__item {
+//        display: flex;
+//    align-items: center;
+//    justify-content: center;
+//    flex-direction: column;
+//    text-align: center;
+//    }
+//
+//    // .rs-features-block-chocolate__icon
+//
+//    &__icon {
+//        position: absolute;
+//        top: -20px;
+//        right: 0;
+//        margin: auto;
+//        left: 0;
+//        @media (max-width: 757px) {
+//            top: -70px;
+//          }
+//    }
+//
+//    // .rs-features-block-chocolate__title
+//
+//    &__title {
+//        padding-bottom: 4px;
+//        font-size: 13px;
+//        font-weight: 600;
+//        color: #4e6b8b;
+//        font-family: 'EB Garamond', serif;
+//        text-transform: uppercase;
+//        margin-top: 50px;
+//    }
+//
+//    // .rs-features-block-chocolate__subtitle
+//
+//    &__subtitle {
+//        font-size: 13px;
+//        color: #424242;
+//        font-family: 'Montserrat', sans-serif;
+//        padding: 0 52px;
+//        font-weight: 500;
+//
+//    }
+//}
+//

@@ -3,6 +3,7 @@
 @@include('_parts/gallery.js');
 @@include('_parts/news.js');
 @@include('_parts/catalog.js');
+@@include('_parts/features.js');
 
 function testWebP(callback) {
     var webP = new Image();
