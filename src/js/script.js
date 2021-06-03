@@ -1,5 +1,6 @@
 @@include('_parts/header.js');
 @@include('_parts/slider.js');
+@@include('_parts/gallery.js');
 @@include('_parts/news.js');
 
 function testWebP(callback) {

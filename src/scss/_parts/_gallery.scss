@@ -1,0 +1,215 @@
+.rs-slider-block-chocolate {
+  overflow: hidden;
+  padding: 30px 0;
+  &__container {
+    overflow: visible;
+  }
+  &__slide {
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    //@media (max-width: 1199px){}
+    @media (max-width: 1199px){
+      width: 320px;
+      height: 320px;
+    }
+    @media (max-width: 767px){
+      width: 240px;
+      height: 240px;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      //height: 100%;
+      width: 100%;
+      object-fit: cover;
+      height: 400px;
+      @media (max-width: 1199px){
+        height: 320px;
+      }
+      @media (max-width: 767px){
+        height: 240px;
+      }
+    }
+    &:nth-child(even){
+      height: 440px;
+      @media (max-width: 1199px){
+        height: 360px;
+      }
+      @media (max-width: 767px){
+        height: 255px;
+      }
+      img {
+        margin-top: 40px;
+        @media (max-width: 767px){
+          margin-top: 15px;
+        }
+      }
+    }
+    &:nth-child(odd){
+      height: 440px;
+      @media (max-width: 1199px){
+        height: 360px;
+      }
+      @media (max-width: 767px){
+        height: 255px;
+      }
+      img {
+        margin-bottom: 40px;
+        @media (max-width: 767px){
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+#galleryModal {
+  .modal-dialog {
+    width: 940px;
+    @media (max-width: 991px){
+      width: calc(100% - 24px);
+      margin: 12px;
+    }
+  }
+  .modal-body {
+    padding: 0;
+  }
+}
+.rs-gallery-modal {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 400px;
+  &__close {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: auto;
+    left: auto;
+    z-index: 1;
+    cursor: pointer;
+    @media (max-width: 767px){
+      height: 40px;
+      width: 40px;
+      background-color: #333333;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    span {
+      display: block;
+      width: 30px;
+      height: 2px;
+      background-color: #333333;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      @media (max-width: 767px){
+        background-color: #ffffff;
+      }
+      &:nth-child(1){
+        transform: rotate(45deg);
+      }
+      &:nth-child(2){
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  &__image {
+    position: relative;
+    max-width: 50%;
+    flex: 0 0 50%;
+    min-height: 240px;
+    @media (max-width: 767px){
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    max-width: 50%;
+    flex: 0 0 50%;
+    padding: 15px;
+    @media (max-width: 767px){
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+  }
+  &__desc {
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  &__text {
+  }
+  &__products {
+    max-height: 360px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+    &::-webkit-scrollbar-track {
+      padding: 2px;
+      background-color: #f2f2f2;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: darken(#586b89, 10%);
+    }
+  }
+}
+.rs-gallery-product {
+  display: flex;
+  margin-bottom: 15px;
+  &__image {
+    position: relative;
+    max-width: 30%;
+    flex: 0 0 30%;
+    padding-top: 30%;
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__desc {
+    max-width: 70%;
+    flex: 0 0 70%;
+    padding-left: 15px;
+  }
+  &__title {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  &__text {
+    margin-bottom: 20px;
+  }
+  &__button {
+    background-color: #586b89;
+    color: #ffffff;
+    padding: 12px 20px;
+  }
+}
+
