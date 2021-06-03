@@ -1,6 +1,6 @@
-@@include('_parts/header.js');
-@@include('_parts/slider.js');
-@@include('_parts/gallery.js');
+// include('_parts/header.js');
+// include('_parts/slider.js');
+// include('_parts/gallery.js');
 @@include('_parts/news.js');
 
 function testWebP(callback) {
@@ -19,15 +19,27 @@ testWebP(function (support) {
 });
 
 let rsMenuBars = document.getElementById('rsMenuBars');
+let rsMenuClose = document.getElementById('rsMenuClose');
 let rsMenu = document.getElementById('rsMenu');
 let rsMenuSearch = document.getElementById('rsMenuSearch');
 let rsMenuSearchToggler = document.getElementById('rsMenuSearchToggler');
-rsMenuBars.addEventListener('click', function () {
-    rsMenu.classList.add('active');
-});
-rsMenuClose.addEventListener('click', function () {
-    rsMenu.classList.remove('active');
-});
-rsMenuSearchToggler.addEventListener('click', function () {
-    rsMenuSearch.classList.toggle('active');
-});
+if(rsMenuBars) {
+    rsMenuBars.addEventListener('click', function () {
+        rsMenu.classList.add('active');
+    });
+}
+if(rsMenuClose) {
+    rsMenuClose.addEventListener('click', function () {
+        rsMenu.classList.remove('active');
+    });
+}
+if(rsMenuSearchToggler) {
+    rsMenuSearchToggler.addEventListener('click', function () {
+        rsMenuSearch.classList.toggle('active');
+    });
+}
+
+$('#productTabs a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+})

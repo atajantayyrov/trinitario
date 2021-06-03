@@ -1,40 +1,108 @@
 <section class="rs-products">
     <div class="container">
         <h2 class="rs-products__title">Узнайте восхитительный вкус нашего шоколада</h2>
-        <div class="rs-products__links">
-            <a href="#!" class="rs-products__link">Хиты продаж</a>
-            <a href="#!" class="rs-products__link">Акция</a>
-            <a href="#!" class="rs-products__link">Новинки</a>
-        </div>
-        <div class="row rs-products__wrapper">
-            <div class="col-sm-4 rs-products__item">
-                <img src="../img/motif7.png" class="ramka" alt="">
-                <div class="rs-products__content">
-                    <img class="rs-products__content-img" src="../img/product.png" alt="product">
-                    <p class="rs-products__content-title">Дорога к звездам</p>
-                    <p class="rs-products__content-text">Бельгийский шоколад ручной работы<br>
-                        (в ассортименте) 100 г</p>
-                    <p class="rs-products__content-price">от 280 ₽/шт.</p>
+        <div class="rs-products__tabs">
+            <ul class="rs-tab-nav" id="productTabs">
+                <li class="rs-tab-nav__item active">
+                    <a class="rs-tab-nav__link" href="#bestSales" aria-controls="bestSales" aria-expanded="true">
+                        <span>Хиты продаж</span>
+                    </a>
+                </li>
+                <li class="rs-tab-nav__item">
+                    <a class="rs-tab-nav__link" href="#promoProducts" aria-controls="promoProducts">
+                        <span>Акция</span>
+                    </a>
+                </li>
+                <li class="rs-tab-nav__item">
+                    <a class="rs-tab-nav__link" href="#newProducts" aria-controls="newProducts">
+                        <span>Новинки</span>
+                    </a>
+                </li>
+            </ul>
+            <div id="productTabsContent" class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="bestSales" aria-labelledby="home-tab">
+                    <div class="rs-products__row">
+                        <a href="#!" class="rs-products__col rs-featured-product" style="background-image: url('../img/motif1.svg');">
+                            <section class="rs-featured-product__wrapper">
+                                <img class="rs-featured-product__image" src="../img/product.jpg" alt="fetured product 1">
+                                <h3 class="rs-featured-product__title">Дорога к звездам</h3>
+                                <p class="rs-featured-product__text">Бельгийский шоколад ручной работы<br/>(в ассортименте) 100 г</p>
+                                <p class="rs-featured-product__price">от 280 ₽/шт.</p>
+                            </section>
+                        </a>
+                        <a href="#!" class="rs-products__col rs-featured-product" style="background-image: url('../img/motif2.svg');">
+                            <section class="rs-featured-product__wrapper">
+                                <img class="rs-featured-product__image" src="../img/product.jpg" alt="fetured product 1">
+                                <h3 class="rs-featured-product__title">Дорога к звездам</h3>
+                                <p class="rs-featured-product__text">Бельгийский шоколад ручной работы<br/>(в ассортименте) 100 г</p>
+                                <p class="rs-featured-product__price">от 280 ₽/шт.</p>
+                            </section>
+                        </a>
+                        <a href="#!" class="rs-products__col rs-featured-product" style="background-image: url('../img/motif3.svg');">
+                            <section class="rs-featured-product__wrapper">
+                                <img class="rs-featured-product__image" src="../img/product.jpg" alt="fetured product 1">
+                                <h3 class="rs-featured-product__title">Дорога к звездам</h3>
+                                <p class="rs-featured-product__text">Бельгийский шоколад ручной работы<br/>(в ассортименте) 100 г</p>
+                                <p class="rs-featured-product__price">от 280 ₽/шт.</p>
+                            </section>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-4 rs-products__item">
-                <img src="../img/motif7.png" class="ramka" alt="">
-                <div class="rs-products__content">
-                    <img class="rs-products__content-img" src="../img/product.png" alt="product">
-                    <p class="rs-products__content-title">Дорога к звездам</p>
-                    <p class="rs-products__content-text">Бельгийский шоколад ручной работы<br>
-                        (в ассортименте) 100 г</p>
-                    <p class="rs-products__content-price">от 280 ₽/шт.</p>
+                <div role="tabpanel" class="tab-pane fade in" id="promoProducts" aria-labelledby="promoProducts-tab">
+                    <div class="rs-products__row">
+                        <a href="#!" class="rs-products__col rs-featured-product" style="background-image: url('../img/motif1.svg');">
+                            <section class="rs-featured-product__wrapper">
+                                <img class="rs-featured-product__image" src="../img/soco.png" alt="fetured product 1">
+                                <h3 class="rs-featured-product__title">Дорога к звездам</h3>
+                                <p class="rs-featured-product__text">Бельгийский шоколад ручной работы<br/>(в ассортименте) 100 г</p>
+                                <p class="rs-featured-product__price">от 280 ₽/шт.</p>
+                            </section>
+                        </a>
+                        <a href="#!" class="rs-products__col rs-featured-product" style="background-image: url('../img/motif2.svg');">
+                            <section class="rs-featured-product__wrapper">
+                                <img class="rs-featured-product__image" src="../img/soco.png" alt="fetured product 1">
+                                <h3 class="rs-featured-product__title">Дорога к звездам</h3>
+                                <p class="rs-featured-product__text">Бельгийский шоколад ручной работы<br/>(в ассортименте) 100 г</p>
+                                <p class="rs-featured-product__price">от 280 ₽/шт.</p>
+                            </section>
+                        </a>
+                        <a href="#!" class="rs-products__col rs-featured-product" style="background-image: url('../img/motif3.svg');">
+                            <section class="rs-featured-product__wrapper">
+                                <img class="rs-featured-product__image" src="../img/soco.png" alt="fetured product 1">
+                                <h3 class="rs-featured-product__title">Дорога к звездам</h3>
+                                <p class="rs-featured-product__text">Бельгийский шоколад ручной работы<br/>(в ассортименте) 100 г</p>
+                                <p class="rs-featured-product__price">от 280 ₽/шт.</p>
+                            </section>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-4 rs-products__item">
-                <img src="../img/motif7.png" class="ramka" alt="">
-                <div class="rs-products__content">
-                    <img class="rs-products__content-img" src="../img/product.png" alt="product">
-                    <p class="rs-products__content-title">Дорога к звездам</p>
-                    <p class="rs-products__content-text">Бельгийский шоколад ручной работы<br>
-                        (в ассортименте) 100 г</p>
-                    <p class="rs-products__content-price">от 280 ₽/шт.</p>
+                <div role="tabpanel" class="tab-pane fade in" id="newProducts" aria-labelledby="newProducts-tab">
+                    <div class="rs-products__row">
+                        <a href="#!" class="rs-products__col rs-featured-product" style="background-image: url('../img/motif1.svg');">
+                            <section class="rs-featured-product__wrapper">
+                                <img class="rs-featured-product__image" src="../img/product.jpg" alt="fetured product 1">
+                                <h3 class="rs-featured-product__title">Дорога к звездам</h3>
+                                <p class="rs-featured-product__text">Бельгийский шоколад ручной работы<br/>(в ассортименте) 100 г</p>
+                                <p class="rs-featured-product__price">от 280 ₽/шт.</p>
+                            </section>
+                        </a>
+                        <a href="#!" class="rs-products__col rs-featured-product" style="background-image: url('../img/motif2.svg');">
+                            <section class="rs-featured-product__wrapper">
+                                <img class="rs-featured-product__image" src="../img/product.jpg" alt="fetured product 1">
+                                <h3 class="rs-featured-product__title">Дорога к звездам</h3>
+                                <p class="rs-featured-product__text">Бельгийский шоколад ручной работы<br/>(в ассортименте) 100 г</p>
+                                <p class="rs-featured-product__price">от 280 ₽/шт.</p>
+                            </section>
+                        </a>
+                        <a href="#!" class="rs-products__col rs-featured-product" style="background-image: url('../img/motif3.svg');">
+                            <section class="rs-featured-product__wrapper">
+                                <img class="rs-featured-product__image" src="../img/product.jpg" alt="fetured product 1">
+                                <h3 class="rs-featured-product__title">Дорога к звездам</h3>
+                                <p class="rs-featured-product__text">Бельгийский шоколад ручной работы<br/>(в ассортименте) 100 г</p>
+                                <p class="rs-featured-product__price">от 280 ₽/шт.</p>
+                            </section>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

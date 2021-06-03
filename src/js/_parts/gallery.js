@@ -20,9 +20,12 @@ const rsGallery = new Swiper('#rsGallery', {
         }
     }
 })
-document.getElementById('rsGallery').addEventListener('mouseenter',function (){
-    rsGallery.autoplay.stop();
-});
-document.getElementById('rsGallery').addEventListener('mouseleave',function (){
-    rsGallery.autoplay.start();
-});
+let rsGallery = document.getElementById('rsGallery');
+if(rsGallery.length > 0){
+    rsGallery.addEventListener('mouseenter',function (){
+        rsGallery.autoplay.stop();
+    });
+    rsGallery.addEventListener('mouseleave',function (){
+        rsGallery.autoplay.start();
+    });
+}
