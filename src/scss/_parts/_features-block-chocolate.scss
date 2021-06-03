@@ -25,6 +25,9 @@
         right: 0;
         margin: auto;
         left: 0;
+        @media (max-width: 757px) {
+            top: -70px;
+          }
     }
 
     // .rs-features-block-chocolate__title
