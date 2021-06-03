@@ -286,6 +286,7 @@
             padding: 40px 20px;
             transition: top 0.3s ease-in-out;
             overflow-y: scroll;
+            z-index: 99;
             &.active {
                 top: 0;
             }
@@ -362,10 +363,10 @@
         color: #333333;
         @media (max-width: 1320px) {
             padding: 15px;
-        }  
+        }
         @media (max-width: 991px) {
             color: #ffffff;
             display: block;
-        }  
+        }
     }
 }
