@@ -5,8 +5,11 @@
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
     // .rs-slider__text
+    @media (max-width: 565px) {
+    height: 492px;
+      }
+     
 
     &__text {
         display: flex;
@@ -19,6 +22,14 @@
         padding-bottom: 46px;
         font-size: 72px;
         color: #354764;
+        @media (max-width: 991px) {
+            padding-bottom: 26px;
+            font-size: 54px;
+        }
+        @media (max-width: 565px) {
+            font-size: 32px;
+                padding-bottom: 16px;
+              }
     }
 
     // .rs-slider__subtitle
@@ -26,6 +37,9 @@
     &__subtitle {
         font-size: 16px;
         font-family: 'Montserrat', sans-serif;
+        @media (max-width: 320px) {
+            font-size: 11px;
+              }
     }
 }
 .container {

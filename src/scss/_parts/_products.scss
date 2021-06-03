@@ -1,5 +1,8 @@
 .rs-products {
     padding: 60px 0;
+    @media (max-width: 757px) {
+        padding: 30px 0;
+      }
 
     // .rs-products__title
 
@@ -10,6 +13,17 @@
     padding-bottom: 35px;
     font-size: 46px;
     color: #354764;
+    @media (max-width: 991px) {
+        font-size: 38px;
+      }
+      @media (max-width: 757px) {
+        font-size: 28px;
+        padding-bottom: 15px;
+      }
+      @media (max-width: 565px) {
+        font-size: 18px;
+        text-align: center;
+      }
     }
 
     // .rs-products__links
@@ -29,6 +43,9 @@
         &:hover{
             border-bottom: 1px solid #000;
         }
+        @media (max-width: 320px) {
+            margin: 0 9px 22px;
+          }
     }
 
     // .rs-products__content
@@ -79,5 +96,9 @@
 .col-sm-4 {
     .ramka{
         position: absolute;
+        top: 0;
+    right: auto;
+    left: auto;
+    bottom: 0;
     }
 }
