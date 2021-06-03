@@ -10,11 +10,29 @@
         position: relative;
     }
 
+		// .rs-subscribe__wrapper-ramkaimg
+
+		&__wrapper-ramkaimg {
+            position: absolute;
+            width: 702px;
+            height: 442px;
+            top: 0;right: 0;
+            bottom: 0;left: 0;
+            z-index: -10;
+            @media (max-width: 757px) {
+                width: 540px;
+                  }
+                  @media (max-width: 565px) {
+                    width: 330px;
+                      }
+
+
+		}
+
     &__wrapper {
-        background-color: #fff;
+        position: relative;
         width: 702px;
         height: 442px;
-        background-image: url(../../img/ramkaform.png);
         display: flex;
         align-items: flex-start;
         justify-content: center;
@@ -25,6 +43,14 @@
             text-align: center;
             margin: auto;
       }
+      @media (max-width: 757px) {
+        width: 552px;
+          }
+          @media (max-width: 565px) {
+            width: 320px;
+        padding: 0 20px;
+              }
+      
     }
 
     &__image{
@@ -45,6 +71,11 @@
         color: #354764;
         padding-bottom: 15px;
         letter-spacing: 0.5px;
+        @media (max-width: 565px) {
+            font-size: 22px;
+        padding-bottom: 9px;
+
+              }
     }
 
     // .rs-subscribe__subtitle
@@ -60,6 +91,10 @@
             padding-right: 0;
 
           }
+          @media (max-width: 565px) {
+            padding-bottom: 10px;
+            line-height: 1;
+              }
         
     }
 		// .rs-subscribe__subtitle-link
@@ -78,6 +113,16 @@
         display: flex;
         align-items: center;
         margin-bottom: 50px;
+        @media (max-width: 757px) {
+            width: 100%;
+              }
+              @media (max-width: 565px) {
+                height: 34px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        border: none;
+        height: 84px;
+                  }
         
     }
 
@@ -92,7 +137,13 @@
         outline: none;
         border-right: 1px solid #586b89;
         padding-left: 34px;
-        
+        @media (max-width: 565px) {
+            width: 100%;
+            border: 1px solid #586b89;
+            text-align: center;
+            padding-left: 0;
+            height: 42px;
+              }
         
     }
 
@@ -114,8 +165,13 @@
         &:hover{
             background: #ce7a51;
             color: #fff;
-
         }
+        @media (max-width: 565px) {
+            width: 100%;
+        border: 1px solid #586b89;
+        height: 42px;
+
+              }
     }
 
     // .rs-subscribe__icons
@@ -128,6 +184,10 @@
         font-family: 'EB Garamond', serif;
         font-weight: 500;
         padding-bottom: 17px;
+        @media (max-width: 565px) {
+            font-size: 22px;
+
+              }
     }
 
     // .rs-subscribe__icons-icon
